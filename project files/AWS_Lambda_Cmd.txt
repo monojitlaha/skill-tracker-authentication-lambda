@@ -1,0 +1,9 @@
+dotnet tool install -g Amazon.Lambda.Tools
+
+dotnet new --install Amazon.Lambda.Templates::5.2.0
+
+dotnet new --update Amazon.Lambda.Templates::5.2.0
+
+dotnet new lambda.EmptyFunction --name SkillTrackerLambda
+
+dotnet lambda deploy-function SkillTrackerLambda
